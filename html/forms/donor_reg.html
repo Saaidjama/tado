@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Registration</title>
+</head>
+<body
+style="background-color: blanchedalmond;">
+   <legend> </legend>
+   <h2>Donor Registration Form</h2>
+   
+    <form autocomplete="on" method="post" action="google.com/">
+        <fieldset><legend><h3>Basic Information</h3> </legend>
+            <label for="fname">First Name *:</label>
+            <input size="45" autofocus required type="text"><br><br>
+            <label for="lname">Last Name *:</label>
+            <input size="45" required type="text"><br><br>
+            <label for="DoB">Date of Birth:</label>
+            <input size="30" type="date"><br><br>
+<!--name is the same, id/value must be different-->
+
+            Sex: <input type="radio" name="sex" id="male"> 
+                <label for="male">Male</label>
+                <input type="radio" name="sex" id="female" >
+                <label for="female">Female</label>
+                <br><br>
+                
+            <label for="Tel">Telephone:</label>
+            <input size="20" type="tel"><br><br>
+            <label for="Email">Email: *</label>
+            <input size="23" required type="email"><br><br>
+            <label for="Location">Location:</label>
+            <select required name="Choose Location" id="Location">
+                <option value="">--Choose Location--</option>
+                <option value="afrso">Africa/Somalia</option>
+                <option value="afret">Africa/Ethiopia</option>
+                <option value="afrke">Africa/Kenya</option>
+                <option value="n.america">USA/Canada</option>
+                <option value="eu">Europe</option>
+                <option value="aus_nz">Australia/NZ</option>
+
+            </select>
+
+        </fieldset>
+        <br>
+        <fieldset><legend><h3>Donation Information</h3></legend><br>
+            <label for="Donation">Donation Amount:</label>
+            <select name="Donation" id="">
+                <option value="Donation">--Donation--</option>
+                <option value="200">$200.00 Per Month</option>
+                <option value="150">$150.00 Per Month</option>
+                <option value="100">$100.00 Per Month</option>
+                <option value="75">$75.00 Per Month</option>
+                <option value="50">$50.00 Per Month</option>
+                <option value="25">$25.00 Per Month</option>
+                <option value="20">$20.00 Per Month</option>
+                <option value="15">$15.00 Per Month</option>
+                <option value="10">$10.00 Per Month</option>
+                <option value="5">$5.00 Per Month</option>
+
+            </select><br><br>
+            <input type="checkbox">
+            <label for="">I confirm this donation</label>
+            <br><br>
+            <textarea rows="5" cols="50" name="Message" id="Message" placeholder="Your Message"></textarea><br><br><br>
+            
+            <button type="submit">Submit</button>   
+            <button type="reset">Reset</button>
+
+
+        </fieldset>
+
+        <fieldset><legend><h3>TADO Bank Details</h3></legend>
+        <img src="/introduction/TADO Bank Details.jpg" alt="TADO Bank Details" height="300">
+    </fieldset>
+        <br>
+
+    </form>
+    <br>
+
+    <a href="/introduction/home.html">Go Back to Home</a>
+</body>
+</html>
