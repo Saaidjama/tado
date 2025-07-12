@@ -7,14 +7,16 @@
 </head>
 <body
 style="background-color: blanchedalmond;">
+<nav><img width="750" src="/introduction/TADO banner.jpg" alt="TADO Logo" height="100"></nav>
    <legend> </legend>
    <h2>Donor Registration Form</h2>
    
     <form autocomplete="on" method="post" action="google.com/">
         <fieldset><legend><h3>Basic Information</h3> </legend>
-            <label for="fname">First Name *:</label>
+
+            <label for="fname">First Name <span style="color: red;">*</span>:</label>
             <input size="45" autofocus required type="text"><br><br>
-            <label for="lname">Last Name *:</label>
+            <label for="lname">Last Name <span style="color: red;">*</span>:</label>
             <input size="45" required type="text"><br><br>
             <label for="DoB">Date of Birth:</label>
             <input size="30" type="date"><br><br>
@@ -28,9 +30,9 @@ style="background-color: blanchedalmond;">
                 
             <label for="Tel">Telephone:</label>
             <input size="20" type="tel"><br><br>
-            <label for="Email">Email: *</label>
+            <label for="Email">Email: <span style="color: red;">*</span></label>
             <input size="23" required type="email"><br><br>
-            <label for="Location">Location:</label>
+            <label for="Location">Location:<span style="color: red;">*</span></label>
             <select required name="Choose Location" id="Location">
                 <option value="">--Choose Location--</option>
                 <option value="afrso">Africa/Somalia</option>
@@ -45,7 +47,7 @@ style="background-color: blanchedalmond;">
         </fieldset>
         <br>
         <fieldset><legend><h3>Donation Information</h3></legend><br>
-            <label for="Donation">Donation Amount:</label>
+            <label for="Donation">Donation Amount:  <span style="color: red;">*</span> </label>
             <select name="Donation" id="">
                 <option value="Donation">--Donation--</option>
                 <option value="200">$200.00 Per Month</option>
@@ -60,14 +62,14 @@ style="background-color: blanchedalmond;">
                 <option value="5">$5.00 Per Month</option>
 
             </select><br><br>
-            <input type="checkbox">
-            <label for="">I confirm this donation</label>
+            <input type="checkbox"required>
+            <label for="">I agree with this registration <span style="color: red;">*</span></label>
             <br><br>
             <textarea rows="5" cols="50" name="Message" id="Message" placeholder="Your Message"></textarea><br><br><br>
             
-            <button type="submit">Submit</button>   
+            <button type="submit">Register</button>   
             <button type="reset">Reset</button>
-
+<br>
 
         </fieldset>
 
